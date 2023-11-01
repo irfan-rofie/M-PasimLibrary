@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="o" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fbf9f7"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <!--LinearLayout
+            android:id="@+id/ln_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:padding="3dip" >
+        </LinearLayout -->
+
+        <!--TextView
+            android:id="@+id/tv_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cover"
+            android:layout_toRightOf="@+id/cover"
+            android:textSize="20dip"
+            android:textStyle="bold" / -->
+
+        <ScrollView
+            android:id="@+id/sv_profil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/ln_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:orientation="vertical"
+                android:padding="3dip" >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/niv_foto"
+                    android:layout_width="175dip"
+                    android:layout_height="150dip"
+                    android:layout_gravity="center"
+                    android:background="#fff"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/noimage" />
+
+                <!--TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Detail Profil"
+                    android:textStyle="bold" / -->
+
+                <TextView
+                    android:id="@+id/tv_nim_nik"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_nama_anggota"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp" />
+
+                <TextView
+                    android:id="@+id/tv_jen_kel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_tmp_tgl_lahir"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_jur_ket"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_alamat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp" />
+
+                <TextView
+                    android:id="@+id/tv_no_kontak"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_tgl_masuk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</merge>
